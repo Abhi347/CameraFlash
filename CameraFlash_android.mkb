@@ -1,0 +1,17 @@
+#!/usr/bin/env mkb
+# Builder mkb file for the CameraFlash extension on android
+platform LINUX
+
+buildtype (SCONS, ARM)
+
+define S3E_ANDROID
+
+options
+{
+    dll
+    output-name="lib/android/libCameraFlash.so"
+    output-name-debug="lib/android/libCameraFlash_d.so"
+}
+define S3E_BUILD_EXT
+
+subproject CameraFlash_build

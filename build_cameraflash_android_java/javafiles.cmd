@@ -1,0 +1,1 @@
+../source/android/CameraFlash.java
